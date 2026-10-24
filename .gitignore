@@ -1,0 +1,54 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+
+# ---- 运行时数据（数据文件不进仓库） ----
+*.json.tmp
+todos.json
+*.db
+*.sqlite3
+logs/
+
+# ---- C / C++ 构建产物 ----
+build/
+build-*/
+*.o
+*.obj
+*.exe
+*.pdb
+*.ilk
+*.lib
+Makefile
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+compile_commands.json
+
+# ---- Rust ----
+target/
+
+# ---- 大文件 / 模型权重（仓库要控制在 10MB 以下） ----
+models/
+*.gguf
+*.ggml
+*.bin
+*.safetensors
+*.onnx
+
+# ---- 编辑器与系统 ----
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# ---- 临时文件 ----
+*.tmp
+*.bak
+*.log
